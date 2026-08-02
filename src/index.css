@@ -18,7 +18,7 @@
 	--primary-hover: #1e90ff;
 	--text: #f0f0f0;
 	--text2: #a0a0a0;
-	--shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+	--shadow: 0 8px 30px rgba(162, 170, 190, 0.08);
 }
 
 ::-webkit-scrollbar {
@@ -28,7 +28,6 @@
 
 ::-webkit-scrollbar-track {
 	background: var(--bg);
-	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {

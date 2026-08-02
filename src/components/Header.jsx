@@ -87,7 +87,7 @@ export default function Header() {
 				<div className="hidden items-center gap-6 md:flex">
 					<button
 						onClick={darkMode}
-						className="rounded-xl p-2 transition hover:scale-105"
+						className="rounded-xl p-2 transition hover:scale-105 cursor-pointer"
 					>
 						{mode == "dark" ? (
 							<Sun size={30} color="#D8A03A" />
@@ -95,8 +95,8 @@ export default function Header() {
 							<Moon size={30} color="#0f172a" />
 						)}
 					</button>
-					<button className="rounded-3xl px-3 py-2 text-(--primary) text-sm transition border-2 border-(--primary)/50 hover:scale-105">
-						CONNECT
+					<button className="rounded-3xl px-3 py-2 text-(--primary) text-sm transition border-2 border-(--primary)/50 hover:scale-105 cursor-pointer duration-300">
+						<a href="#CONNECTION"></a>
 					</button>
 				</div>
 
