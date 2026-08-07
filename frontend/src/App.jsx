@@ -2,6 +2,7 @@ import Stack from "./components/Stack";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Services from "./components/Services";
+import Process from "./components/Process";
 
 const App = () => {
 	return (
@@ -10,6 +11,7 @@ const App = () => {
 			<Home />
 			<Services />
 			<Stack />
+			<Process />
 		</div>
 	);
 };
