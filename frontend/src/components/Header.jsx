@@ -96,7 +96,7 @@ export default function Header() {
 						)}
 					</button>
 					<button className="rounded-3xl px-3 py-2 text-(--primary) text-sm transition border-2 border-(--primary)/50 hover:scale-105 cursor-pointer duration-300">
-						<a href="#CONNECTION"></a>
+						<a href="#CONNECTION">CONNECT</a>
 					</button>
 				</div>
 
