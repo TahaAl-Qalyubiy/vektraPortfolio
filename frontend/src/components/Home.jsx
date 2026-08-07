@@ -10,7 +10,7 @@ function Home() {
 						<p className="text-(--text) text-7xl text-500">Software with</p>
 						<p className="text-(--primary) text-7xl text-500">Direction</p>
 					</div>
-					<p className="text-(--text2) w-100 text-base/6 tracking-wide my-12">
+					<p className="text-(--text2) max-w-100 text-base/6 tracking-wide my-12">
 						Engineered for global scale. We build the digital nervous systems
 						for tomorrow's industry leaders through precision code and neural
 						optimization.
