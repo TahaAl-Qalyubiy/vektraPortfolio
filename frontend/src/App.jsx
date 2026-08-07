@@ -1,3 +1,4 @@
+import Stack from "./components/Stack";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Services from "./components/Services";
@@ -8,6 +9,7 @@ const App = () => {
 			<Header />
 			<Home />
 			<Services />
+			<Stack />
 		</div>
 	);
 };
