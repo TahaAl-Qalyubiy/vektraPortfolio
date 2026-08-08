@@ -2,7 +2,7 @@ import { process } from "../data/process";
 
 export default function Process() {
 	return (
-		<section id="flow" className="mx-auto max-w-7xl px-6 py-32">
+		<section id="FLOW" className="mx-auto max-w-7xl px-6 py-32">
 			{/* Heading */}
 
 			<div className="mb-24 text-center">
@@ -54,7 +54,9 @@ export default function Process() {
 
 							{/*Dasktop*/}
 
-							<div className="absolute left-14 top-6 hidden h-0.5 w-full origin-left scale-x-0 bg-(--primary) transition-transform duration-500 group-hover:scale-x-105 lg:block"></div>
+							<div
+								className={`absolute left-14 top-6 hidden h-0.5 w-full origin-left scale-x-0 bg-(--primary) transition-transform duration-500 ${step.id == "04" ? "group-hover:scale-x-85" : "group-hover:scale-x-105"} lg:block`}
+							></div>
 						</div>
 					))}
 				</div>

@@ -33,7 +33,7 @@ export default function Header() {
 	}, [mode]);
 
 	return (
-		<header className="sticky top-0 z-50 shadow-(--shadow) ">
+		<header className="sticky top-0 z-50 shadow-(--shadow) bg-(--bg)">
 			<div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-6">
 				{/* Logo */}
 				<div className="flex items-center gap-3">
