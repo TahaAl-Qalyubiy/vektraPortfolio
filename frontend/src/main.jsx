@@ -7,20 +7,23 @@ import {
 	Route,
 	RouterProvider,
 } from "react-router-dom";
-import Police from "./pages/Police.jsx";
+import Policy from "./pages/Policy.jsx";
 import App from "./App.jsx";
+import { ThemeProvider } from "./context/ThemeContext";
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
 		<>
 			<Route path="/" element={<App />} />
-			<Route path="Police" element={<Police />} />
+			<Route path="Police" element={<Policy />} />
 		</>,
 	),
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
-		<RouterProvider router={router} />
+		<ThemeProvider>
+			<RouterProvider router={router} />
+		</ThemeProvider>
 	</React.StrictMode>,
 );

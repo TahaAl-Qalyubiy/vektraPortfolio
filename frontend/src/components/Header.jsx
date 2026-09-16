@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import vektra from "../assets/images/vektra.png";
+import { useTheme } from "../context/ThemeContext.jsx";
 import {
 	Menu,
 	X,
@@ -17,20 +18,7 @@ const navLinks = [
 
 export default function Header() {
 	const [open, setOpen] = useState(false);
-	const [mode, setMode] = useState(localStorage.getItem("theme") || "light");
-
-	function darkMode() {
-		setMode(mode == "light" ? "dark" : "light");
-	}
-
-	useEffect(() => {
-		if (mode == "dark") {
-			document.body.classList.add("dark");
-		} else {
-			document.body.classList.remove("dark");
-		}
-		localStorage.setItem("theme", mode);
-	}, [mode]);
+	const { mode, toggleTheme } = useTheme();
 
 	return (
 		<header className="sticky top-0 z-50 shadow-(--shadow) bg-(--bg)">
@@ -86,7 +74,7 @@ export default function Header() {
 				{/* Right Side */}
 				<div className="hidden items-center gap-6 md:flex">
 					<button
-						onClick={darkMode}
+						onClick={toggleTheme}
 						className="rounded-xl p-2 transition hover:scale-105 cursor-pointer"
 					>
 						{mode == "dark" ? (
@@ -133,7 +121,7 @@ export default function Header() {
 						<hr className="my-2  text-(--text2)" />
 
 						<button
-							onClick={darkMode}
+							onClick={toggleTheme}
 							className="flex items-center gap-3 rounded-xl px-4 py-3 text-(--text) text-2xl transition hover:bg-(--primary)/5 hover:text-(--primary)"
 						>
 							{mode == "dark" ? (
